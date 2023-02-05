@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./first project 1_files/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./first project 1_files/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Google font -->
+    <link href="./first project 1_files/css2" rel="stylesheet">
+    <title>project 1</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- logo -->
+            <div class="logo"><img src="./first project 1_files/5beacfe74c2a4c5191a982b0803d4a2c-modified.png" alt=""></div>
+            <!-- Navigation -->
+            <ul>
+                <li><a href="http://127.0.0.1:5500/#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/#">About</a></li>
+                <li><a href="http://127.0.0.1:5500/#">Contact</a></li>
+            </ul>
+            <!-- Search Box -->
+            <div class="search-field">
+                <div><input type="text" placeholder="search" fdprocessedid="pw2so8"></div>
+                <button fdprocessedid="tvwpwg">search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+        <!-- left division context -->
+        <div class="hero-left-section">
+            <h1>Hello, I am a <span>Web Developer</span></h1>
+            <p>
+                I am an aspiring <span>Full stack JavaScript Developer</span>,<br> who is currently working as <span>a Freelancer</span> for <br> <span>National and International Client</span> 
+            </p>
+        </div>
+        <!-- right division context -->
+        <div class="hero-right-section">
+            <img src="./first project 1_files/cpk.png" alt="">
+            <!-- Chat Button -->
+            <div class="hero-right-section-btns">
+                <button fdprocessedid="202efz">Chat with Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- footer text -->
+        <div><p>Copyright © 2023 LOGO. All rights reserved.</p></div>
+        <div><ul>
+            <li><a href="https://www.github.com/gulshan07dev"><i class="fa-brands fa-square-github"></i></a></li>
+            <li><a href="https://www.instagram.com/@gulshan07dev"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in//"><i class="fa-brands fa-linkedin"></i></a></li>
+         </ul>
+        </div>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
